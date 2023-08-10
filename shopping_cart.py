@@ -18,7 +18,6 @@ def add_to_cart(item, cart):
 def view_stock():
     pass
 
-
 def view_cart():
     pass
 
@@ -39,16 +38,19 @@ def main():
         command = input('What would you like to buy? \n  --If you want to view the options, type "help".\n')
         if command == 'help':
             print('Type "add <item>" to add an item to your cart.')
+            print('Type "stock" to view the items for sale')
             print('Type "cart" to view your cart.')
             print('Type "checkout" to checkout.')
             print('Type "exit" to exit.')
         elif command.startswith('add'):
             item = command.split(' ')[1]
             print(add_to_cart(item, cart))
+        elif command == 'stock':
+            print(view_stock())
         elif command == 'cart':
-            view_cart()
+            print(view_cart())
         elif command == 'checkout':
-            calculate_total()
+            print(calculate_total())
             break
         elif command == 'exit':
             break
@@ -56,6 +58,7 @@ def main():
             print('Sorry, that is not a valid command.')
 
     print('Thank you for shopping with us!')
+
 
 if __name__ == '__main__':
     main()
