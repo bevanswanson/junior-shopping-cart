@@ -1,3 +1,11 @@
+PRICE_LIST = {
+    'apple': 1,
+    'banana': 2,
+    'pak choi': 2,
+    'snake oil': 5 
+}
+
+
 def greet(name):
     return f'Hello, {name}!'
 
@@ -5,6 +13,10 @@ def greet(name):
 def add_to_cart(item, cart):
     cart.append(item)
     return f'Adding {item} to cart.'
+
+
+def view_stock():
+    pass
 
 
 def view_cart():

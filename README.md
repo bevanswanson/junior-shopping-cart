@@ -6,6 +6,6 @@ An introductory space to get junior python developers comfortable with writing t
 
 ## Running
 
-To run the application, run `pythn shopping_cart.py`.
+To run the application, run `python shopping_cart.py`.
 
 To run the test suite, run `pytest`.
